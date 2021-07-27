@@ -52,4 +52,29 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.content-item-wrapper {
+    position: relative;
+}
+
+.content-img-background {
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 
