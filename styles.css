@@ -54,14 +54,14 @@ body {
 
 .content-item-wrapper {
     position: relative;
-}
-
-.content-img-background {
-    height: 1000px;
+    height: 350px;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-text-wrapper {
@@ -73,8 +73,6 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
 }
 
 
