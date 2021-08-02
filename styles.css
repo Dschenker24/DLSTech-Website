@@ -64,6 +64,18 @@ body {
     align-items: center;
 }
 
+.content-img-background {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img-text-wrapper {
     position: absolute;
     top: 0;
@@ -73,6 +85,47 @@ body {
     align-items: center;
     height: 100%;
     text-align: center;
+}
+
+.logo-wrapper img {
+    width: 75%;
+    margin-bottom: 10px;
+}
+
+.content-item-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    font-size: large;
+    color: white;
+}
+
+.content-item-wrapper .subtitle .sub-subtitle {
+    transition: 1s;
+    font-weight: 300;
+    font-size: large;
+    color: transparent;
+}
+
+.content-item-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: white;
+    font-size: xx-large;
+}
+
+.content-item-wrapper:hover .subtitle .sub-subtitle {
+    font-weight: 300;
+    color: white;
+    font-size: large;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.img-lighten {
+    transition: 1s;
+    filter: brightness(100%);
 }
 
 

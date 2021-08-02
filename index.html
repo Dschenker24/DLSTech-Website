@@ -37,7 +37,9 @@
         <div class="master-content-wrapper">
             <div class="content-items-wrapper">
 
-                <div class="content-item-wrapper" style= "background-image: URL(images/blue-placeholder.jpg)">
+                <div class="content-item-wrapper">
+
+                    <div class="content-img-background" style= "background-image: URL(images/blue-placeholder.jpg)"></div>
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
@@ -46,11 +48,17 @@
 
                         <div class="subtitle">
                             Services
+                            <div class="sub-subtitle">
+                                Explore the wide range of services offered by DLSTech
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="content-item-wrapper" style= "background-image:URL(images/white-placeholder.jpg)">
+                <div class="content-item-wrapper">
+
+                    <div class="content-img-background" style= "background-image:URL(images/white-placeholder.jpg)"></div>
+
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
@@ -59,11 +67,16 @@
 
                         <div class="subtitle">
                             Technicians
+                            <div class="sub-subtitle">
+                                Learn more about the people helping you
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="content-item-wrapper" style= "background-image:URL(images/red-placeholder.jpg)">
+                <div class="content-item-wrapper">
+
+                    <div class="content-img-background" style= "background-image:URL(images/red-placeholder.jpg)"></div>
                     
                     <div class="img-text-wrapper">
                         <div class="logo-wrapper">
@@ -72,6 +85,9 @@
 
                         <div class="subtitle">
                             Reviews
+                            <div class="sub-subtitle">
+                                Find out what other people think of us
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,4 +95,19 @@
         </div>
     </div>
 </body>
+<script>
+    const contentItems = document.querySelectorAll('.content-item-wrapper');
+
+    contentItems.forEach(contentItem => {
+        contentItem.addEventListener('mouseover', () => {
+            contentItem.childNodes[1].classList.remove('img-lighten');
+            contentItem.childNodes[1].classList.add('img-darken');
+        })
+
+        contentItem.addEventListener('mouseout', () => {
+            contentItem.childNodes[1].classList.remove('img-darken');
+            contentItem.childNodes[1].classList.add('img-lighten');
+        })
+    })
+</script>
 </html>
