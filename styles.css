@@ -63,7 +63,7 @@ body {
 
 .content-item-wrapper {
     position: relative;
-    height: 350px;
+    height: 500px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -75,7 +75,7 @@ body {
 
 .content-img-background {
     position: relative;
-    height: 350px;
+    height: 500px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -97,7 +97,7 @@ body {
 }
 
 .logo-wrapper img {
-    width: 75%;
+    width: 50%;
     margin-bottom: 10px;
 }
 
