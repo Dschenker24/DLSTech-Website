@@ -45,6 +45,14 @@ body {
     color: black;
 }
 
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
 /* Content Styles */
 
 .content-items-wrapper {
@@ -127,5 +135,36 @@ body {
     transition: 1s;
     filter: brightness(100%);
 }
+
+/* Contact page styles */
+
+.heading-wrapper {
+    display: flex;
+    font-size: x-large;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.email-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.phone-heading {
+    display: flex;
+    justify-content: center;
+}
+
+.phone {
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
